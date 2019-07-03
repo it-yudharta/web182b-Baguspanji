@@ -67,7 +67,7 @@
                                 <td>{{$absen->keluar}}</td>
                                 <!-- <td>{{$absen->ket}}</td> -->
                                 <td>
-                                    <a name="btnIn" class="btn btn-warning btn-sm disabled" href="/absensi/hadir/{{$absen->id}}">Masuk</a>
+                                    <a name="btnIn" class="btn btn-warning btn-sm active" href="/absensi/hadir/{{$absen->id}}">Masuk</a>
                                     <a name="btnOut" class="btn btn-danger btn-sm active" href="/absensi/keluar/{{$absen->id}}">Keluar</a>
                                     @auth
                                     <a name="btnNew" class="btn btn-primary btn-sm" href="/absensi/besok/{{$absen->nama}}/{{$absen->jabatan}}">New</a>

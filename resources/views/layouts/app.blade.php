@@ -32,26 +32,35 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    
+
+                    <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                            <div class="dropdown-menu">
+                            <a class="nav-link" href="{{ url('article') }}">Article</a>
+                            <a class="nav-link" href="{{ url('pegawai') }}">Karyawan</a>
+                            <a class="nav-link" href="{{ url('absensi') }}">Absensi</a>
+                          </li>
+
+                    </ul>
+
                     <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('article') }}">Article</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('pegawai') }}">Karyawan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('absensi') }}">Absensi</a>
                             </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        <form class="form-inline my-2 my-lg-0">
+                        <!-- <form class="form-inline my-2 my-lg-0">
                           <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
                           <button class="btn btn-success my-2 my-sm-0 btn-sm" type="submit">Search</button>
-                        </form>
+                        </form> -->
 
                         <!-- Authentication Links -->
                         @guest

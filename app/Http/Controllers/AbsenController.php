@@ -47,7 +47,7 @@ class AbsenController extends Controller
 
         return redirect()->to('/absensi')->with('absen','Anda telah mengisi daftar hadir');
 
-    }
+    } 
 
     public function keluar(Request $request, $id)
     {

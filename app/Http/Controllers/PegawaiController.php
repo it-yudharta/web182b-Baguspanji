@@ -83,7 +83,7 @@ class PegawaiController extends Controller
     {
         $pegawai = Pegawai::find($id); 
         $pegawai->update($request->all());
-        return redirect('/pegawai')->with('tambah','Data Berhasil Update');
+        return redirect('/pegawai')->with('show','Data Berhasil Update');
     }
 
     public function destroy($id)
